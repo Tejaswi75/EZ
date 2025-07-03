@@ -1,0 +1,206 @@
+{
+	"info": {
+		"_postman_id": "bef394d3-428e-4358-b1b4-f445a53b7d29",
+		"name": "EZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46400814",
+		"_collection_link": "https://tejaswisonal.postman.co/workspace/Tejaswi-sonal's-Workspace~cd020199-5abe-4408-8bd2-ad08cf4021ad/collection/46400814-bef394d3-428e-4358-b1b4-f445a53b7d29?action=share&source=collection_link&creator=46400814"
+	},
+	"item": [
+		{
+			"name": "operation upload file",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/operation/upload-file",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"operation",
+						"upload-file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "operation login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/operation/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"operation",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client signup",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "email",
+							"value": "test.abc3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "client login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "test.abc3@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/client/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/operation/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "ops1@example.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "23456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/operation/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"operation",
+						"login"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8000/operation/login' \\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--data-urlencode 'username=ops@example.com' \\\n--data-urlencode 'password=yourpassword'"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/client/files",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlzX29wcyI6ZmFsc2UsImV4cCI6MTc1MTQ5MzU1OH0.mwdfvU768tl6mN2bic1NtAIFxH0Q85LhHpXGVlY6gXc"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/client/files",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"client",
+						"files"
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://localhost:8000/client/files' \\\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjQsImlzX29wcyI6ZmFsc2UsImV4cCI6MTc1MTQ5MzU1OH0.mwdfvU768tl6mN2bic1NtAIFxH0Q85LhHpXGVlY6gXc'"
+			},
+			"response": []
+		}
+	]
+}
